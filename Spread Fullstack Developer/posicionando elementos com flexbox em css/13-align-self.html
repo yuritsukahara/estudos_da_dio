@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align-self</title>
+    <style>
+        .flex-container{
+            display: flex;
+            border: 2px solid gray;
+            max-width: 350px;
+            margin-bottom: 10px;
+        }
+        
+        .align-container{
+            align-items: center;
+
+        }
+
+        .item{
+            background-color: mediumseagreen;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .center{
+            align-self: center;
+        }
+
+        .start{
+            align-self: flex-start;
+
+        }
+
+        .end{
+            align-self: flex-end;
+        }
+
+        .baseline{
+            align-self: baseline;
+        }
+
+        .auto{
+            align-self: auto;
+        }
+
+        .stretch{
+            align-self: stretch;
+        }
+
+        .direction{
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <h1>Row</h1>
+    <p>auto</p>
+    <section class="flex-container align-container">
+        <div class="item auto">AAAAA</div>
+        <div class="item auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, modi.</div>
+        <div class="item auto">123</div>
+        <div class="item auto">2</div>
+        <div class="item auto">item4</div>
+    </section>
+
+    <p>diversos</p>
+    <section class="flex-container">
+        <div class="item stretch">AAAAA</div>
+        <div class="item auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, modi.</div>
+        <div class="item end">123</div>
+        <div class="item start">2</div>
+        <div class="item center">item4</div>
+    </section>
+
+    <h1>Column</h1>
+    <p>auto</p>
+    <section class="flex-container align-container direction">
+        <div class="item auto">AAAAA</div>
+        <div class="item auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, modi.</div>
+        <div class="item auto">123</div>
+        <div class="item auto">2</div>
+        <div class="item auto">item4</div>
+    </section>
+
+    <p>diversos</p>
+    <section class="flex-container direction">
+        <div class="item stretch">AAAAA</div>
+        <div class="item auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, modi.</div>
+        <div class="item end">123</div>
+        <div class="item start">2</div>
+        <div class="item center">item4</div>
+    </section>
+</body>
+</html>
