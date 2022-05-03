@@ -1,0 +1,291 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-size: 14px;
+}
+
+a:active{
+	color: #3a559f;
+	text-decoration: none;
+}
+
+body {
+	width: 100%;
+	min-width: 100vh;
+	background-color: #fafafa;
+}
+
+.instagram-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+    padding-bottom: 40px;
+}
+
+.instagram-phone{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.instagram-phone-back{
+	height: 40rem;
+	position: relative;
+}
+
+.instagram-phone-front{
+	position: absolute;
+	height: 34rem;
+	top: 25px;
+	left: 138px;
+}
+
+
+.main-content {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+	min-height: 34rem;
+	width: 355px;
+    min-width: 355px;
+}
+
+.box {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	background-color: white;
+	border: 1px solid lightgray;
+	border-radius: 1%;
+	width: 100%;
+	padding: 1.3rem;
+	margin-bottom: 1rem;
+}
+
+.box:nth-child(1) {
+	min-height: 20rem;
+}
+
+.instagram-logo {
+	padding: 25px 0;
+}
+
+.login-form {
+	display: flex;
+	flex-direction: column;
+	min-width: 85%;
+	align-items: stretch;
+	color: lightgray;
+}
+
+.login-form input {
+	margin: 0.5em;
+}
+
+.login-form input:first-child {
+	margin-bottom: 0px;
+}
+
+.input-user {
+	padding: 14px 10px;
+	background-color: #fafafa;
+	border: 1px solid lightgray;
+	border-radius: 2px;
+	font-size: 12px;
+}
+
+.btn-login {
+	background-color: #0095f6;
+	border: transparent;
+	border-radius: 2px;
+	height: 30px;
+	color: white;
+	font-weight: 600;
+	font-size: 14px;
+	cursor:pointer;
+}
+
+.btn-login:active{
+	background-color: #045f9b;
+}
+
+p.get-app {
+	margin-bottom: 1.5em;
+}
+.get-the-app {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.divider {
+	display: flex;
+	align-items: center;
+	color: rgb(156, 156, 156);
+	margin: 20px;
+}
+
+.divider::before {
+	background-color: lightgray;
+	content: '';
+	display: block;
+	min-width: 100px;
+	height: 1px;
+}
+
+.divider::after {
+	background-color: lightgray;
+	content: '';
+	display: block;
+	min-width: 100px;
+	height: 1px;
+}
+
+.divider p {
+	font-size: 12px;
+	font-weight: 600;
+	margin: 0 10px;
+}
+
+.facebook-login {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	font-weight: 600;
+	margin-bottom: 20px;
+	color: #3a559f;
+}
+
+.facebook-login a:visited{
+	color: #3a559f;
+}
+
+.facebook-icon {
+	content: '';
+	background: url('./img/facebook.png');
+	background-size: 14px 14px;
+	height: 14px;
+	width: 14px;
+	margin-right: 5px;
+}
+
+.forgot {
+	font-size: 12px;
+	color: #3a559f;
+}
+
+.blue-link {
+	color: #0095f6;
+	font-weight: 700;
+	margin-left: 5px;
+}
+
+.download img {
+	height: 40px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: gray;
+	padding-bottom: 60px;
+	max-width: 70%;
+	margin: auto;
+}
+
+
+.sitemap ul {
+	display: flex;
+    flex-wrap: wrap;
+	justify-content: center;
+    min-width: 400px;
+	width: 100%;
+}
+
+.sitemap ul li{
+	margin: 5px;
+	font-size: 12px;
+}
+
+.sitemap ul li a{
+	font-size: 12px;
+	
+}
+
+.sitemap ul li a:link, .sitemap ul li a:visited{
+	color: gray;
+}
+
+.categorias ul {
+	display: flex;
+    flex-wrap: wrap;
+}
+
+.categorias ul li a{
+	margin: 5px;
+	font-size: 12px;
+	flex: 0 0 auto;
+}
+
+.categorias ul li a:link, .categorias ul li a:visited{
+	color: gray;
+}
+
+.copyright {
+	display: flex;
+	margin: 20px;
+	font-size: 12px;
+}
+
+.copyright p {
+	font-size: 12px;
+}
+
+#language {
+	color: gray;
+	margin-right: 20px;
+	border: transparent;
+	font-size: 12px;
+	background-color: #fafafa;
+}
+
+.fr{
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+	.instagram-phone{
+		display: none;
+	} 
+	
+	.body{
+		background-color: white;
+	}
+
+	.box{
+		border: transparent;
+	}
+
+	.footer{
+		display: none;
+	}
+
+	.instagram-wrapper{
+		width: 100%;
+	}
+}
