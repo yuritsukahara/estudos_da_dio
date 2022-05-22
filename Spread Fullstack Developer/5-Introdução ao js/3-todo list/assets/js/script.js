@@ -38,6 +38,8 @@ function adTarefaEnter(e) {
 }
 
 btn.addEventListener('click', adTarefa);
+
 form.addEventListener('keypress', (e) => {
 	adTarefaEnter(e);
 });
+
