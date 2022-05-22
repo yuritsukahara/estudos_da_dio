@@ -1,0 +1,99 @@
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.flex{
+    display: flex;
+}
+
+.tarefas {
+    flex-direction: row;
+    
+}
+
+.g-0{
+    flex-grow: 0;
+}
+
+.g-1{
+    flex-grow: 1;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0px auto;
+}
+
+.item{
+    margin: 5px;
+}
+
+
+.stretch{
+    justify-content: stretch;
+    align-content: stretch;
+    align-items: stretch;
+}
+
+h1{
+    margin: 20px;
+    text-transform: capitalize;
+    text-align: center;
+    background-color: white;
+}
+
+
+#form{
+    flex-direction: row;
+}
+
+#input{
+    padding:10px;
+    border-radius: 5px;
+    border:1px solid gray;
+}
+
+#btn{
+    background-color:blue;
+    stroke: 0;
+    border-radius: 5px;
+    border-style: none;
+    color: white;
+    padding: 10px;
+}
+
+#btn:hover{
+    background-color: rgb(118, 118, 255);
+    stroke: 0;
+    border-radius: 5px;
+    border-style: none;
+    padding: 10px;
+}
+
+#btn:active{
+    background-color: blue;
+    stroke: 0;
+    border-radius: 5px;
+    border-style: none;
+    padding: 10px;  
+}
+
+#tarefas{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column-reverse;   
+}
+
+.check-box:checked + label{
+    text-decoration: line-through;
+    color: gray;
+}
+
+.aic{
+   align-items: center;
+}
