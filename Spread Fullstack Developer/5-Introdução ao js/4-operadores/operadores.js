@@ -30,4 +30,12 @@ function resultado(a, b) {
 	console.log(resultado);
 }
 
-resultado(args[2], args[3]);
+if (!args[2]) {
+	console.log('Digite dois números separados por espaço na execução do js');
+} else {
+	if (!parseInt(args[2]) || !parseInt(args[3])) {
+		console.log('Insira números');
+	} else {
+		resultado(args[2], args[3]);
+	}
+}
