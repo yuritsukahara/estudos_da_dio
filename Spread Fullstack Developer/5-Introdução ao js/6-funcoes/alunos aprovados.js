@@ -5,12 +5,12 @@
 // 3. Utilize a técnica "object destructuring" para manipular as propriedades desejadas de cada aluno.
 
 // Eu simplifiquei os parametros para receber apenas a array dos alunos. Assim a média é adquirida através do loop for.
-function Aprovados(alunos) {
+function Aprovados(alunos, media) {
 	let alunosAprovados = [];
 
 	for (aluno of alunos) {
 		let { mediaFinal } = aluno;
-		atingiuMedia = mediaFinal >= 7;
+		atingiuMedia = mediaFinal >= media;
 		if (atingiuMedia) {
 			alunosAprovados.push(aluno);
 		}
@@ -26,4 +26,4 @@ let alunos = [
 	{ nome: 'Yuri', mediaFinal: 8 },
 ];
 
-console.log(Aprovados(alunos));
+console.log(Aprovados(alunos, 8));
