@@ -1,6 +1,7 @@
 // ### Filter
 // - Filtre e retorne todos os números pares de um array.
 
+# Atividades do curso: Readme retirado do git da [Stensmich](https://github.com/stebsnusch)
 
 
 function ePar(numero) {
