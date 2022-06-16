@@ -1,5 +1,6 @@
 let elements = document.querySelectorAll('h1, button, footer, body');
 let modeSelector = document.getElementById('mode-selector');
+let title = document.getElementById('page-title');
 
 modeSelector.addEventListener('click', changeMode);
 
@@ -12,7 +13,9 @@ function changeMode() {
     
     if (hasDarkMode) {
 		modeSelector.innerText = 'Light Mode';
+        title.innerText = 'Dark Mode On'
 	} else {
         modeSelector.innerText = 'Dark Mode';
+        title.innerText = 'Light Mode On'
     }
 }
