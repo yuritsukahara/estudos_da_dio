@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	font-family: 'Lato', sans-serif;
+}
+
+body {
+	background-color: #9046cf;
+}
+
+div#content {
+	display: flex;
+	max-width: 800px;
+	height: 100vh;
+	align-items: center;
+	justify-content: start;
+	margin: auto;
+	flex-direction: column;
+	padding: 100px 20px;
+    flex-shrink: 1;
+    flex-wrap: nowrap;
+}
+
+h1 {
+	color: #fde12d;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+
+input,
+button {
+	padding: 10px;
+	margin: 10px 0;
+}
+
+input {
+	border-radius: 2px;
+	border: 0px;
+}
+
+input:focus {
+	outline-color: #fde12d;
+}
+
+button {
+	font-weight: 700;
+	background-color: #fde12d;
+	border: none;
+	border-radius: 2px;
+}
+
+button:hover {
+	background-color: black;
+	color: #fde12d;
+	border: none;
+}
+
+button:active {
+	background-color: black;
+	border: none;
+}
+
+table {
+	background-color: aliceblue;
+	border-collapse: separate;
+	border-spacing: 0;
+
+}
+
+tr{
+    border: 1px solid lightgray;
+}
+
+th {
+    border: 1px solid lightgray;
+	padding: 10px;
+}
+
+td {
+    border: 1px solid lightgray;
+	text-align: center;
+	padding: 0 10px;   
+}
+
+@media (max-width: 600px) {
+    div#input{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    input,
+button {
+	padding: 10px;
+	margin: 5px 0;
+}
+}
