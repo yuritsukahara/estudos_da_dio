@@ -8,7 +8,7 @@ interface Veiculo {
 	const $ = (query: string): HTMLInputElement | null =>
 		document.querySelector(query);
 
-	function validarPlaca(placa:string) {
+	function validarPlaca(placa: string) {
 		let resposta = false;
 		const regexPlaca = /^[a-zA-Z]{3}[0-9]{4}$/;
 		const regexPlacaMercosulCarro =
@@ -103,14 +103,14 @@ interface Veiculo {
 
 	$('#cadastrar')?.addEventListener('click', () => {
 		const nome = $('#nome')?.value;
-		const placa = $('#placa')?.value.trim().replace(/-/g, "").toUpperCase;
+		const placa = $('#placa')?.value.trim().replace(/-/g, '').toUpperCase();
 
 		if (!nome || !placa) {
 			alert('Os campos nome e placa são obrigatórios');
 			return;
 		}
 
-		if(!validarPlaca(placa)){
+		if (!validarPlaca(placa)) {
 			alert('Placa inválida');
 			return;
 		}
@@ -119,7 +119,7 @@ interface Veiculo {
 			{
 				nome,
 				placa,
-				entrada: new Date().toLocaleTimeString('pt-br') + ' (Brasília)',
+				entrada: new Date().toISOString(),
 			},
 			true
 		);
