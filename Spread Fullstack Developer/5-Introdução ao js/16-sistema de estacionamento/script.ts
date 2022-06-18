@@ -89,7 +89,7 @@ interface Veiculo {
 		}
 
 		patio().adcionar(
-			{ nome, placa, entrada: new Date().toISOString() },
+			{ nome, placa, entrada: new Date().toLocaleTimeString('pt-br') + ' (Brasília)' },
 			true
 		);
 	});
