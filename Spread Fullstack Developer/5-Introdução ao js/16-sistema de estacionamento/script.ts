@@ -14,7 +14,7 @@ interface Veiculo {
 
 		return `${min}m e ${sec}s`;
 	}
-
+	
 	function patio() {
 		function ler(): Veiculo[] {
 			return localStorage.patio ? JSON.parse(localStorage.patio) : [];
@@ -56,7 +56,7 @@ interface Veiculo {
 
 			if (
 				!confirm(
-					`O veiculo ${nome} permaneceu por ${tempo}. Deseja encerrar?`
+					`O veículo ${nome} permaneceu por ${tempo}. Deseja encerrar?`
 				)
 			)
 				return;
@@ -94,3 +94,4 @@ interface Veiculo {
 		);
 	});
 })();
+
