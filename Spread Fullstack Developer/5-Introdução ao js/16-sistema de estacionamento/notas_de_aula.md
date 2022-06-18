@@ -16,4 +16,6 @@ npx -p typescript tsc --init # inicia o projeto usando typescript
 npx -p typescript tsc # transcode ts into js
 ```
 
+localStorage trabalha apenas com strings. Parsear Json para leitura e stringfy para escrita.
+
 ---
