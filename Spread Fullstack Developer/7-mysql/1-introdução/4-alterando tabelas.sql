@@ -1,0 +1,1 @@
+ALTER TABLE pessoa ADD genero VARCHAR(1) NOT NULL AFTER nascimento;
