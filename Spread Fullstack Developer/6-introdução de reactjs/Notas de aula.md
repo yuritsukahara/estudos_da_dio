@@ -111,6 +111,18 @@ No webpack.config.js
 ```
 
 Instalar `npm i -D webpack-dev-server`
-adicionar no package.json: `"start:dev": "webpack-dev-server"`
+adicionar no package.json: `"start:dev": "webpack-dev-server --mode development"`
 
-A vantagem é que vem com hot reload 
+A vantagem é que vem com hot reload entre outras coisas. Depois é só chamar no cl `npm run start:dev`
+
+## Webpack sourcemap;
+ Debugar melhor o código, adicionar nos modulos do webpack.config.js: `devtool:'source-map'`
+## Instalação do EsLint
+
+`npm i --save-dev eslint babel-eslint eslint-plugin-react eslint-watch`
+
+Adicionar nos scripts de package.json> `"eslint": "eslint .;src/*.js"`
+
+Executar ´npm run eslint´
+
+É sempre bom aplicar o eslint antes de mandar o projeto.
