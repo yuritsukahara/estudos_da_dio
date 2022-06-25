@@ -7,21 +7,21 @@ const hasCustomer = false;
 
 const App = () => {
 
-	const renderShowHistory = () => {
-		return <div>
+	const renderShowHistory = (
+		<div>
 		Clique no botão abaixo para visualizar o histórico dos clientes.
 		<br />
 		{buttonA}
 		</div>
-	}
+	)
 
-	const renderAddCustomer = () => {
+	const renderAddCustomer = (
 		<div>
 					Clique abaixo para cadastar o clientes
 					<br />
 					{buttonB}
 				</div>
-	}
+	)
 
 	const showCustomer = () => {
 		if (!hasCustomer) return null
@@ -37,7 +37,7 @@ const App = () => {
 			<p>Digital Innovation One</p>
 			<p>Bem vindo a nossa aula =D</p>
 			Valor da variável hasCustomer: {hasCustomer.toString()}
-			{hasCustomer ? renderShowHistory() : renderAddCustomer()}
+			{hasCustomer ? renderShowHistory : renderAddCustomer}
 			<div>
 				{showCustomer()}
 			</div>
