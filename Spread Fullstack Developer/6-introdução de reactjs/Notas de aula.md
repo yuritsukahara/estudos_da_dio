@@ -126,3 +126,7 @@ Adicionar nos scripts de package.json> `"eslint": "eslint .;src/*.js"`
 Executar ´npm run eslint´
 
 É sempre bom aplicar o eslint antes de mandar o projeto.
+
+# Renderização Condicional
+
+React é declarativo, apresenta ou não. Com isso condicionais são muito úteis na hora de exibir certo componente.
