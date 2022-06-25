@@ -74,3 +74,43 @@ module.exports = {
 No package.json criar entrada de script chamando o webpack:
 
 `"build": "webpack --mode production"`
+
+
+### Instalando babel
+
+`npm i @babel/core babel-loader @babel/preset-env @babel/preset-react --save-dev`
+
+`npm i -D babel-preset-react`
+
+criar arquivo .babelrc
+
+```json
+{
+    "presets": [
+        "@babel/preset-env",
+        "@babel/preset-react"]
+}
+```
+
+## Instalando webpack htmlbundler e dev server
+
+`npm install --save-dev html-webpack-plugin`
+
+No webpack.config.js
+
+```js
+ const HtmlWebPackPlugin = require("html-webpack-plugin")
+
+// adicionar em plugins
+ plugins:[
+        new HtmlWebPackPlugin({
+            template: "./src/index.html",
+            filename: "./index.html"
+        })
+    ]
+```
+
+Instalar `npm i -D webpack-dev-server`
+adicionar no package.json: `"start:dev": "webpack-dev-server"`
+
+A vantagem é que vem com hot reload 
