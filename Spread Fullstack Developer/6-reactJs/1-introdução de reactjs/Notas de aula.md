@@ -130,3 +130,15 @@ Executar ´npm run eslint´
 # Renderização Condicional
 
 React é declarativo, apresenta ou não. Com isso condicionais são muito úteis na hora de exibir certo componente.
+
+
+# Outros
+
+Os itens de listas e chave e manipulação de eventos estão exemplos práticos entendíveis pelo código nas suas pastas
+
+# Pensando do jeito React
+
+- Usar Mock
+- Separar a UI em hierarquia de componentes (separar em pastas)
+- Usar responsabilidades únicas
+- As rotas em React são chamados de containers
