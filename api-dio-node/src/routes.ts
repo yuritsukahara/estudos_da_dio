@@ -11,7 +11,7 @@ router.get('/', (req: Request, res: Response) => {
 	return res.json({ mensagem: 'Bem vindo a nossa DIO API' });
 });
 
-router.get('/usuarios', createUserController.handle) 
+router.post('/usuarios', createUserController.handle) 
 
 export  {router};
 
