@@ -1,18 +1,10 @@
-import {Response, Request} from 'express';
+import { Request, Response } from 'express';
 
 class CreateUserController{
      handle(req: Request, res: Response)  {
-	return res.json([
-		{
-			nome: 'João'
-		},
-		{
-			nome: 'Maria'
-		},
-		{
-			nome: 'Kate'
-		},
-	]);
+	const nome  = req.body.name;
+
+    return res.json({mensagem: 'Usuário ${nome} criado'})
 };}
 
 export { CreateUserController}
