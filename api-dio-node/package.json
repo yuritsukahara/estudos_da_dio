@@ -1,0 +1,21 @@
+{
+  "name": "api-dio-node",
+  "version": "1.0.0",
+  "description": "[Link do curso](https://web.dio.me/course/criando-uma-api-rest-com-nodejs-e-typeorm/learning/8431a9e6-ca35-4c02-bfd1-69004834dae5)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node-dev ./src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "github:types/express",
+    "ts-node-dev": "^1.0.0",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
